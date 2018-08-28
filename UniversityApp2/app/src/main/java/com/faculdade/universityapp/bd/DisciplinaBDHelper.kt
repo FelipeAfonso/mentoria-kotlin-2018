@@ -55,29 +55,13 @@ class DisciplinaBDHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         var d5 = Disciplina(0,"IC", "Inglês Técnico", 20181, 9.0)
         val values = ContentValues()
 
-        // Disciplina 1
         inserirDisciplina(d1)
         inserirDisciplina(d2)
         inserirDisciplina(d3)
         inserirDisciplina(d4)
         inserirDisciplina(d5)
         return true
-        /*
-        //Disciplina 2
-        values.put(DBContract.Disciplinas_Ent.COL_SIGLA, d2.sigla)
-        values.put(DBContract.Disciplinas_Ent.COL_NOME, d2.nome)
-        values.put(DBContract.Disciplinas_Ent.COL_SEM, d2.semAno)
-        values.put(DBContract.Disciplinas_Ent.COL_NOTA, d2.nota)
-        db.insert(DBContract.Disciplinas_Ent.TABLE_NAME, null, values)
 
-        //Disciplina 3
-        values.put(DBContract.Disciplinas_Ent.COL_SIGLA, d3.sigla)
-        values.put(DBContract.Disciplinas_Ent.COL_NOME, d3.nome)
-        values.put(DBContract.Disciplinas_Ent.COL_SEM, d3.semAno)
-        values.put(DBContract.Disciplinas_Ent.COL_NOTA, d3.nota)
-        db.insert(DBContract.Disciplinas_Ent.TABLE_NAME, null, values)
-        return true
-        */
     }
 
     @Throws(SQLiteConstraintException::class)
