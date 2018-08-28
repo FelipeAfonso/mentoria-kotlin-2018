@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UniversityApp</string>
+    <string name="title_activity_disciplinas">Disciplinas</string>
+    <string name="title_activity_form__disciplinas">Form_Disciplinas</string>
+</resources>
